@@ -8,19 +8,23 @@
       </head>
       <body>
           <div class="container">
-              <div class="col-12"><h1>Extrair texto do PDF pdf</h1></div>
+              <div class="col-12 mt-4"><h1>Extrair texto do PDF</h1></div>
               
               <div class="col-12">
                   <form action="/upload" method="post" enctype="multipart/form-data">
-                      <label class="form-label" for="customFile">Default file input example</label>
-                      <input type="file" class="form-control" id="pdf" name="pdf" accept="application/pdf" />
-                      <button type="submit" class="btn btn-success"> Upload</button>
+                    <div class="row">
+                      <label class="form-label" for="customFile">Selecione o PDF:</label>
+                      <input type="file" class="form-control" id="pdf" name="pdf" accept="application/pdf"  required/>
+                      
+                        <button type="submit" class="text-center mt-4 btn btn-success"> Upload</button>
+                      </div>
                     </form>
+
+                    <div class="form-group green-border-focus">
+                        <textarea class="form-control mt-4" id="exampleFormControlTextarea5" rows="10">{{text}}</textarea> 
+                    </div>
                 </div>
-                <div class="form-group green-border-focus">
-                    <label for="exampleFormControlTextarea5">Colorful border on :focus state</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea5" rows="3">{{text}}</textarea> 
-                </div>
+                
           </div>
        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
