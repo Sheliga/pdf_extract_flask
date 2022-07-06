@@ -1,6 +1,5 @@
 import os
-from flask import Flask, render_template, request, session,redirect, url_for, send_file
-from numpy import save
+from flask import Flask, render_template, request, send_file
 from werkzeug.utils import secure_filename
 import PyPDF2
 
@@ -27,7 +26,6 @@ def upload():
     
     texto = open_file(savePath)
     return render_template('index.html',text = texto)
-    #return 'Upload com sucesso'
 
 @app.route('/get-file/<filename>')
 def getFile(filename):
