@@ -10,7 +10,7 @@ python app.py
 ```
 
 A seguir vemos a tela inicial do projeto:
-<img src="https://raw.githubusercontent.com/Sheliga/images/master/projects/pdf_extract_flask/extrair_pdf.jpg" />
+<img src="https://raw.githubusercontent.com/Sheliga/images/master/projects/pdf_extract_flask/extrai_pdf.jpg" />
 
 para utilizar basta selecionar o arquivo no botão "selecionar arquivo" e então clicar no upload, o texto irá aparecer na area de texto no fim da pagina,
 para testar o projeto recomendo o uso do arquivo "test.pdf" que se encontra na pasta upload
